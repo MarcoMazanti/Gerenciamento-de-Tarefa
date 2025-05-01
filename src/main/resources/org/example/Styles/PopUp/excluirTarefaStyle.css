@@ -1,0 +1,26 @@
+root {
+    -fx-background-color: #d3d3d3;
+}
+
+#botaoCancelar {
+    -fx-background-color: #015101;
+}
+
+#botaoExcluir {
+    -fx-background-color: #8c0505;
+}
+
+Label {
+    -fx-text-fill: red;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+Button {
+    -fx-text-fill: #d3d3d3;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-cursor: hand;
+}

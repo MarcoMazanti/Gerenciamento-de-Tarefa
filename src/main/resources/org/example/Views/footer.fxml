@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.Controllers.FooterController"
+           prefHeight="120.0"
+           fx:id="footerPane">
+    <stylesheets>
+        <URL value="@../Styles/footerStyle.css" />
+    </stylesheets>
+
+    <HBox spacing="20" alignment="CENTER">
+        <ImageView fitWidth="100" fitHeight="100" fx:id="fotoCriador">
+            <image>
+                <Image url="@../Images/fotoMinha.jpg" />
+            </image>
+        </ImageView>
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="• Marco Aurélio Consoni Mazanti" />
+            <Label text="• marcauremaza@gmail.com" />
+            <Label text="• LinkedIn " styleClass="clicavel" onMouseClicked="#linkedIn" />
+            <Label text="• GitHub " styleClass="clicavel" onMouseClicked="#gitHub" />
+        </VBox>
+    </HBox>
+</StackPane>

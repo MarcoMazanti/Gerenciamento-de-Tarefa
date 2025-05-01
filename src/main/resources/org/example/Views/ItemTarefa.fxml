@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.Controllers.ItemTarefaController"
+      maxHeight="100" prefWidth="675" spacing="10"
+      fx:id="blocoCelula">
+    <stylesheets>
+        <URL value="@../Styles/itemTabelaStyle.css" />
+    </stylesheets>
+
+    <BorderPane>
+        <left>
+            <VBox spacing="5" alignment="CENTER_LEFT">
+                <Label fx:id="nome" styleClass="titulo" />
+                <TextFlow>
+                    <Label text="Status: " styleClass="titulo" />
+                    <Label fx:id="status" />
+                    <Label text=" - Prioridade: " styleClass="titulo" />
+                    <Label fx:id="prioridade" />
+                </TextFlow>
+            </VBox>
+        </left>
+        <center>
+            <Separator prefWidth="10" orientation="VERTICAL" />
+        </center>
+        <right>
+            <VBox spacing="5" alignment="CENTER_RIGHT">
+                <TextFlow>
+                    <Label text="Data Criada: " styleClass="titulo" />
+                    <Label fx:id="dataCriada" />
+                </TextFlow>
+                <TextFlow>
+                    <Label text="Data Limite: " styleClass="titulo" />
+                    <Label fx:id="dataLimite" />
+                </TextFlow>
+            </VBox>
+        </right>
+    </BorderPane>
+
+    <Separator prefHeight="10" orientation="HORIZONTAL" />
+
+    <VBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Comentário:" styleClass="titulo" />
+        <Label fx:id="comentario" maxHeight="50" wrapText="true" />
+    </VBox>
+</VBox>

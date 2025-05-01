@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.Controllers.PopUp.ListarTarefaController"
+            prefHeight="450.0" prefWidth="500.0">
+    <stylesheets>
+        <URL value="@../../Styles/PopUp/listarTarefaStyle.css" />
+    </stylesheets>
+
+    <top>
+        <fx:include source="../header.fxml" />
+    </top>
+    <center>
+        <StackPane style="-fx-padding: 40px">
+            <VBox spacing="25" alignment="CENTER" fx:id="BlocoPrincipal">
+                <StackPane>
+                    <Label text="Escolha a listagem:" />
+                </StackPane>
+
+                <Separator orientation="HORIZONTAL" />
+
+                <HBox spacing="25" alignment="CENTER">
+                    <VBox spacing="10" alignment="CENTER">
+                        <VBox>
+                            <Label text="Filtrar:" />
+                            <ComboBox fx:id="textoFiltrar" onAction="#mostrarFuncaoExpecifica" prefWidth="150" />
+                        </VBox>
+
+                        <VBox fx:id="BlocoFiltroExpecifico" visible="false">
+                            <Label text="Filtrar por: " />
+                            <ComboBox fx:id="filtroExpecifico" prefWidth="150" />
+                        </VBox>
+                    </VBox>
+
+                    <Separator orientation="VERTICAL" />
+
+                    <VBox spacing="5">
+                        <Label text="Ordenar por:" />
+                        <RadioButton text="Nome" fx:id="rbNome" />
+                        <RadioButton text="Status" fx:id="rbStatus" />
+                        <RadioButton text="Prioridade" fx:id="rbPrioridade" />
+                        <RadioButton text="Data Criada" fx:id="rbDataCriada" />
+                        <RadioButton text="Data Limite" fx:id="rbDataLimite" />
+                    </VBox>
+                </HBox>
+                <HBox spacing="40" alignment="CENTER">
+                    <Button text="Cancelar" onAction="#cancelarTarefa" prefWidth="120" />
+                    <Button text="Filtrar" onAction="#filtrarOrdenarTarefa" prefWidth="120" />
+                </HBox>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

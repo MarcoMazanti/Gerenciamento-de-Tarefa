@@ -1,0 +1,10 @@
+root {
+    -fx-background-color: #d3d3d3;
+}
+
+Label {
+    -fx-text-fill: red;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+}

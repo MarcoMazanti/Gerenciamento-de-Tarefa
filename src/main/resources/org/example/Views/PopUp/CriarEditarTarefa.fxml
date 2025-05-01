@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.Controllers.PopUp.CriarEditarTarefaController"
+            prefHeight="450.0" prefWidth="750.0">
+    <stylesheets>
+        <URL value="@../../Styles/PopUp/criarEditarTarefaStyle.css" />
+    </stylesheets>
+
+    <top>
+        <fx:include source="../header.fxml" />
+    </top>
+    <center>
+        <StackPane style="-fx-padding: 40px">
+            <VBox fx:id="blocoDados">
+                <StackPane>
+                    <Label text="Insira os dados:" fx:id="textoTitulo" />
+                </StackPane>
+
+                <Separator prefHeight="10" orientation="HORIZONTAL" />
+
+                <HBox spacing="20">
+                    <VBox spacing="10" prefWidth="350" alignment="CENTER">
+                        <VBox>
+                            <Label text="Nome:" />
+                            <TextField fx:id="textoNome" styleClass="texto" />
+                        </VBox>
+
+                        <HBox spacing="25">
+                            <VBox>
+                                <Label text="Status:" />
+                                <ComboBox minWidth="150" fx:id="caixaStatus" styleClass="texto" />
+                            </VBox>
+
+                            <VBox>
+                                <Label text="Prioridade:" />
+                                <ComboBox minWidth="150" fx:id="caixaPrioridade" styleClass="texto" />
+                            </VBox>
+                        </HBox>
+
+                        <HBox alignment="CENTER">
+                            <VBox>
+                                <Label text="Data limite:" />
+                                <DatePicker minWidth="150" fx:id="escolhaData" styleClass="texto" />
+                            </VBox>
+                        </HBox>
+                    </VBox>
+
+                    <Separator prefWidth="10" orientation="VERTICAL" />
+
+                    <VBox>
+                        <Label text="Descrição" />
+                        <TextArea fx:id="textoDescricao" />
+                    </VBox>
+                </HBox>
+
+                <HBox spacing="50" alignment="CENTER">
+                    <Button text="Cancelar" onAction="#cancelarCriacao" prefWidth="100" />
+                    <Button fx:id="botaoCriarEditar" onAction="#criarEditarTarefa" prefWidth="100" />
+                </HBox>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,39 @@
+root {
+    -fx-background-color: #d3d3d3;
+}
+
+#textoTitulo {
+    -fx-font-size: 18px;
+}
+
+#blocoDados {
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+    -fx-background-color: #333333;
+    -fx-border-color: #202020;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 8px;
+}
+
+Label {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.texto {
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+Button {
+    -fx-background-color: #d3d3d3;
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-cursor: hand;
+}

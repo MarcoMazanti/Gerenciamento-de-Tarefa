@@ -1,0 +1,18 @@
+#blocoCelula {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #202020;
+    -fx-border-width: 3px;
+    -fx-padding: 10px;
+}
+
+.titulo {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial", sans-serif;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.Controllers.PopUp.ExcluirTarefaController"
+           prefHeight="100.0" prefWidth="300.0">
+    <stylesheets>
+        <URL value="@../../Styles/PopUp/excluirTarefaStyle.css" />
+    </stylesheets>
+
+    <VBox spacing="20" alignment="CENTER">
+        <Label text="Você deseja excluir essa tarefa?" alignment="CENTER" wrapText="true" />
+        <HBox spacing="25" alignment="CENTER">
+            <Button text="Cancelar" prefWidth="100" fx:id="botaoCancelar" onAction="#cancelarExclusao" />
+            <Button text="Excuir" prefWidth="100" fx:id="botaoExcluir" onAction="#excluirTarefa" />
+        </HBox>
+    </VBox>
+</StackPane>

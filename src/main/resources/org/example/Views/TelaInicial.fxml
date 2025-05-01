@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.Controllers.TelaInicialController"
+            prefHeight="720.0" prefWidth="1280.0">
+    <stylesheets>
+        <URL value="@../Styles/StylePadrao.css" />
+    </stylesheets>
+    <top>
+        <fx:include source="header.fxml" />
+    </top>
+    <center>
+        <HBox spacing="100" style="-fx-padding: 50;">
+            <VBox spacing="15" alignment="CENTER"
+                  prefWidth="300" prefHeight="400"
+                  fx:id="blocoTipoDeEscolha">
+                <Label text="Escolha qual ação deseja executar!" wrapText="true" textAlignment="CENTER" />
+
+                <Separator prefHeight="10" orientation="HORIZONTAL" />
+
+                <VBox spacing="15" alignment="CENTER" style="-fx-padding: 25">
+                    <Button text="1. Adicionar Tarefa" prefHeight="50" prefWidth="250" onAction="#adicionarTarefa" />
+                    <Button text="2. Listar Tarefa" prefHeight="50" prefWidth="250" onAction="#listarTarefa" />
+                    <Button text="3. Editar Tarefa" prefHeight="50" prefWidth="250" onAction="#editarTarefa" />
+                    <Button text="4. Excluir Tarefa" prefHeight="50" prefWidth="250" onAction="#excluirTarefa" />
+                </VBox>
+            </VBox>
+            <VBox fx:id="blocoListaTarefas" prefWidth="800" alignment="CENTER" spacing="15">
+                <Label text="Lista de Tarefas" />
+                <Separator prefHeight="10" orientation="HORIZONTAL" />
+                <ListView maxWidth="720" maxHeight="310" fx:id="listaDeTarefas" />
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <fx:include source="footer.fxml" />
+    </bottom>
+</BorderPane>

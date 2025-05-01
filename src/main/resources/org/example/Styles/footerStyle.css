@@ -1,0 +1,15 @@
+#footerPane {
+    -fx-background-color: #333333;
+}
+
+.clicavel {
+    -fx-text-fill: #8ae6f6;
+    -fx-cursor: hand;
+}
+
+Label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+}
