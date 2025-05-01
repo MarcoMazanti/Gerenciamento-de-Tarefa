@@ -1,7 +1,4 @@
 nome, status, prioridade, descricao, data, dataLimite
-"tarefa 1",pendente,alta,"Trabalho do Alex - Criação dos slides","2025-04-23T20:06:30.732382600-03:00[America/Sao_Paulo]","2025-04-27T20:06:30.732382600-03:00[America/Sao_Paulo]"
-"tarefa 2",concluida,baixa,"exercícios do run.code","2025-04-23T20:06:56.436029100-03:00[America/Sao_Paulo]","2025-05-28T20:06:56.436029100-03:00[America/Sao_Paulo]"
-"tarefa 3",concluida,media,"trabalho BPM da Elaine","2025-04-23T20:21:46.298547600-03:00[America/Sao_Paulo]","2025-05-08T20:21:46.298547600-03:00[America/Sao_Paulo]"
-" gv4gv3q4f 4r",pendente,baixa,"v3 4tfnodnxqiwdq3r","2025-04-23T22:26:16.029646700-03:00[America/Sao_Paulo]","2025-05-13T22:26:16.029646700-03:00[America/Sao_Paulo]"
-"Rever java",pendente,baixa,"tenho que rever java","2025-04-30T17:27:04.506202200-03:00[America/Sao_Paulo]","2025-05-02T00:00-03:00[America/Sao_Paulo]"
-"teste",concluida,media,"teste de descrição concluida","2025-04-30T17:25:15.009687100-03:00[America/Sao_Paulo]","2025-05-09T00:00-03:00[America/Sao_Paulo]"
+"tarefa 1",pendente,alta,"Trabalho do Alex - Criação dos slides","2025-05-01T00:30:53.197928900-03:00[America/Sao_Paulo]","2025-05-03T00:00-03:00[America/Sao_Paulo]"
+"tarefa 2",concluida,baixa,"exercícios do run.code","2025-05-01T00:31:10.382580700-03:00[America/Sao_Paulo]","2025-05-28T00:00-03:00[America/Sao_Paulo]"
+"tarefa 3",concluida,media,"trabalho BPM da Elaine","2025-05-01T00:31:21.958656-03:00[America/Sao_Paulo]","2025-05-03T00:00-03:00[America/Sao_Paulo]"
